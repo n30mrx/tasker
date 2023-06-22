@@ -3,7 +3,7 @@
 Simple Todo list app.
 Uses [hive](https://github.com/hivedb/hive) for local database
 
-### remember to check my [telegram chnnel](https://t.me/myflutterjourney)
+### remember to check my [telegram chnnel](https://t.me/sezar3l3)
 
 ## Getting Started
 0. Prepapre a flutter IDE [tutorial here](https://docs.flutter.dev/get-started/install)
