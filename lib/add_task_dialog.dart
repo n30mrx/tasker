@@ -9,7 +9,7 @@ class DialogBox extends StatelessWidget {
     required this.controller,
     required this.onCancel,
     required this.onSave,
-    });
+  });
   final controller;
   VoidCallback onSave;
   VoidCallback onCancel;
@@ -19,22 +19,21 @@ class DialogBox extends StatelessWidget {
     return AlertDialog(
       title: const Text("New task"),
       content: SizedBox(
-        height: 150,
+        height: 200,
         child: Column(
           children: [
-            // Get use input
+            Expanded(child: SizedBox()),
+            // Get user input
             TextField(
               controller: controller,
               decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter your task here",
-                labelText: "Task name"
-              ),
+                  border: OutlineInputBorder(),
+                  hintText: "Enter your task here",
+                  labelText: "Task name"),
             ),
             MySaveButton(onPressed: onSave),
             MyCancelButton(onPressed: onCancel)
             //add buttons(save and cancel buttons)
-            
           ],
         ),
       ),
